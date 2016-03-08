@@ -6,6 +6,20 @@
 
     &__link{
         font-weight: bold;
-        display: block;
+
+        &:not(:last-child){
+            margin-right: $s-1;
+        }
+    }
+
+    &--block{
+        .link-list__link{
+            display: block;
+
+            &:not(:last-child){
+                margin-right: 0;
+                margin-bottom: $s-1;
+            }
+        }
     }
 }

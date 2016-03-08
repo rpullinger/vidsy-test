@@ -9,4 +9,13 @@
         background: $c-black;
         color: $c-white;
     }
+
+    &--centered{
+        text-align: center;
+    }
+
+    &--right{
+        text-align: right;
+        &\@sm{ @include breakpoint($b-1){ text-align: right } }
+    }
 }
