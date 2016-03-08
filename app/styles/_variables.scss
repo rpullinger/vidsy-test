@@ -4,12 +4,15 @@
 
 // Colours
 $c-white: #fff;
-$c-black: #131313;
+$c-black: rgb(37, 37, 37);
 $c-2: $c-black;
 $c-3: $c-black;
 $c-4: $c-black;
 $c-5: $c-black;
 $c-6: $c-black;
+
+$c-highlight: rgb(255, 235, 1);
+$c-grey: rgb(168, 168, 168);
 
 // Type
 $f-body: Helvetica, sans-serif;
