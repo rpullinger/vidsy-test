@@ -1,0 +1,34 @@
+{
+  "name": "vidsy-test",
+  "description": "Test page for Vidsy",
+  "main": "",
+  "scripts": {
+    "bootstrap": "mkdir -p www app/{scripts,styles,images,fonts} && touch app/scripts/main.js app/styles/main.scss app/index.html",
+    "preclean": "mkdir -p www",
+    "clean": "rm -r www",
+    "postclean": "npm run preclean",
+    "build:static": "cp -r app/index.html app/fonts app/images www/",
+    "watch:static": "chokidar 'app/index.html' 'app/images' 'app/fonts' -c 'npm run build:static'",
+    "build:css": "node-sass -r app/styles/main.scss | postcss --use autoprefixer --output www/main.css",
+    "watch:css": "chokidar 'app/styles' -c 'npm run build:css'",
+    "prebuild": "npm run clean",
+    "build": "npm run build:css && npm run build:static",
+    "prewatch": "npm run build",
+    "watch": "parallelshell 'npm run serve' 'npm run watch:static' 'npm run watch:css'",
+    "serve": "browser-sync start --server www --files 'www/**/*'",
+    "postinstall": "npm run bootstrap && npm run build"
+  },
+  "keywords": [],
+  "author": "Richard Pullinger <r_pullinger@hotmail.com> (http://pullin.gr)",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "postcss": "^5.0.14",
+    "postcss-cli": "^2.5.1"
+  },
+  "version": "0.0.0"
+}
