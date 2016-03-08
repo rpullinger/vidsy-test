@@ -16,24 +16,24 @@
             width: 50%;
 
             &\@sm{ @include breakpoint($b-1){ width: 50%; } }
-            &\@md{ @include breakpoint($b-3){ width: 50%; } }
-            &\@lg{ @include breakpoint($b-5){ width: 50%; } }
+            &\@md{ @include breakpoint($b-2){ width: 50%; } }
+            &\@lg{ @include breakpoint($b-3){ width: 50%; } }
         }
 
         &--one-third{
             width: 33.33%;
 
             &\@sm{ @include breakpoint($b-1){ width: 33.33%; } }
-            &\@md{ @include breakpoint($b-3){ width: 33.33%; } }
-            &\@lg{ @include breakpoint($b-5){ width: 33.33%; } }
+            &\@md{ @include breakpoint($b-2){ width: 33.33%; } }
+            &\@lg{ @include breakpoint($b-3){ width: 33.33%; } }
         }
 
         &--one-quarter{
             width: 25%;
 
             &\@sm{ @include breakpoint($b-1){ width: 25%; } }
-            &\@md{ @include breakpoint($b-3){ width: 25%; } }
-            &\@lg{ @include breakpoint($b-5){ width: 25%; } }
+            &\@md{ @include breakpoint($b-2){ width: 25%; } }
+            &\@lg{ @include breakpoint($b-3){ width: 25%; } }
         }
     }
 

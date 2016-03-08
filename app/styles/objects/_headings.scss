@@ -1,0 +1,12 @@
+.heading{
+
+    font-size: $f-3;
+
+    &--tight{
+        margin-bottom: $s-1;
+    }
+
+    &--grey{
+        color: $c-grey;
+    }
+}
