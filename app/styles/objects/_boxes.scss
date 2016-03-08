@@ -1,5 +1,10 @@
 .box{
-    padding: $p-2;
+    padding: $p-2 $p-1;
+
+    @include breakpoint($b-1){
+        padding-left: $p-2;
+        padding-right: $p-2;
+    }
 
     &--tight{
         padding: $p-1;
@@ -17,5 +22,14 @@
     &--right{
         text-align: right;
         &\@sm{ @include breakpoint($b-1){ text-align: right } }
+    }
+
+    &--full{
+        min-height: 150px;
+        @include breakpoint($b-1){
+            min-height: 300px;
+        }
+        background-size: cover;
+        background-position: center;
     }
 }

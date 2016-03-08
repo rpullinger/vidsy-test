@@ -1,11 +1,16 @@
 .btn{
-    padding: $p-1 $p-3;
+    padding: $p-1;
     background: $c-highlight;
     color: $c-black;
     margin: 0;
     border: 0;
     display: inline-block;
     cursor: pointer;
+
+    @include breakpoint($b-1){
+        padding-left: $p-3;
+        padding-right: $p-3;
+    }
 
     &--dark{
         background: $c-black;
@@ -16,5 +21,9 @@
         background: transparent;
         border-bottom: 2px solid;
         padding: 0;
+    }
+
+    &--block{
+        display: block
     }
 }

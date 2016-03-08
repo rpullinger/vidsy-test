@@ -2,13 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: -$s-3;
-    margin-top: -$s-3;
+    margin-left: -$s-1;
+    margin-top: -$s-2;
+
+    @include breakpoint($b-1){
+        margin-left: -$s-2;
+        margin-top: -$s-2;
+    }
+
+
+    &--vc{
+        align-items: center;
+    }
 }
 
     .gi{
-        padding-left: $s-3;
-        padding-top: $s-3;
+        padding-left: $s-1;
+        padding-top: $s-2;
+
+        @include breakpoint($b-1){
+            padding-left: $s-2;
+            padding-top: $s-2;
+        }
+
         width: 100%;
         margin-bottom: 0;
 
@@ -34,6 +50,14 @@
             &\@sm{ @include breakpoint($b-1){ width: 25%; } }
             &\@md{ @include breakpoint($b-2){ width: 25%; } }
             &\@lg{ @include breakpoint($b-3){ width: 25%; } }
+        }
+
+        &--three-quarters{
+            width: 75%;
+
+            &\@sm{ @include breakpoint($b-1){ width: 75%; } }
+            &\@md{ @include breakpoint($b-2){ width: 75%; } }
+            &\@lg{ @include breakpoint($b-3){ width: 75%; } }
         }
     }
 
