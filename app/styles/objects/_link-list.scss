@@ -1,0 +1,11 @@
+.link-list{
+
+    &--on-dark{
+        color: $c-white;
+    }
+
+    &__link{
+        font-weight: bold;
+        display: block;
+    }
+}
