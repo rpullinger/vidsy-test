@@ -1,0 +1,12 @@
+.box{
+    padding: $p-2;
+
+    &--tight{
+        padding: $p-1;
+    }
+
+    &--dark{
+        background: $c-black;
+        color: $c-white;
+    }
+}
