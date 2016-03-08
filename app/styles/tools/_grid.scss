@@ -1,0 +1,30 @@
+.g{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -$s-3;
+    margin-top: -$s-3;
+}
+
+    .gi{
+        padding-left: $s-3;
+        padding-top: $s-3;
+        width: 100%;
+        margin-bottom: 0;
+
+        &--half{
+            width: 50%;
+
+            &\@sm{ @include breakpoint($b-1){ width: 50%; } }
+            &\@md{ @include breakpoint($b-3){ width: 50%; } }
+            &\@lg{ @include breakpoint($b-5){ width: 50%; } }
+        }
+
+        &--third{
+            width: 33.33%;
+
+            &\@sm{ @include breakpoint($b-1){ width: 33.33%; } }
+            &\@md{ @include breakpoint($b-3){ width: 33.33%; } }
+            &\@lg{ @include breakpoint($b-5){ width: 50%; } }
+        }
+    }

@@ -1,0 +1,64 @@
+html{
+    -webkit-text-size-adjust: none;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+// Shared vertical rhythm - csswizardry.com/2012/06/single-direction-margin-declarations
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote,p,address,
+table,
+fieldset,figure,
+pre,
+.g{
+    margin-top: 0;
+    margin-bottom: $s-3;
+
+    &:last-child,
+    &.last{ // remove from last if required
+       margin-bottom: 0;
+    }
+}
+
+// Border Box all the things
+*{
+    box-sizing: border-box;
+}
+
+// Makes images responsive by default
+img,
+svg{
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+
+// IE 10/11 svgs
+[src*=".svg"]{
+    width: 100%;
+}
+
+
+
+// Remove the border around images in IE
+a{
+    img{
+        border: 0;
+    }
+}
+
+
+figure{
+    padding: 0;
+    margin: 0;
+}
