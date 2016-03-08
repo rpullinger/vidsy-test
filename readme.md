@@ -2,6 +2,10 @@
 
 A example UI build for Vidsy.
 
+[Profile page](http://richardpullinger.com/vidsy-test/)
+
+[Styleguide](http://richardpullinger.com/vidsy-test/styleguide.html)
+
 ## To dev
 
 `npm run watch`
